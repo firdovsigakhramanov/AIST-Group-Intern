@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f8ff;
+}
+
+body.dark {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Theme */
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  z-index: 1;
+}
+
+.theme-light {
+  width: 16px;
+  cursor: pointer;
+}
+
+.theme-dark {
+  width: 14px;
+  cursor: pointer;
+}
+
+.fa-solid {
+  color: #fff;
+}
+
+body.dark .fa-solid {
+  color: black;
+}
+/*? ------------------- Switch ----------------------  */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f6f8ff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #f6f8ff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 17px;
+}
+
+body.dark .slider.round {
+  border: 1px solid black;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.content {
+  width: 40%;
+  background-color: black;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+body.dark .content {
+  background-color: #fff;
+}
+
+.content-main {
+  display: none;
+}
+
+.content-main.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.name-input {
+  font-size: 20px;
+  color: #f6f8ff;
+}
+
+body.dark .name-input {
+  color: black;
+}
+
+.error-msg__password,
+.error-msg__email {
+  display: none;
+}
+
+.error-msg__password.active,
+.error-msg__email.active {
+  display: inline-block;
+  padding: 3px;
+  color: red;
+}
+
+.submit-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #f6f8ff;
+  color: black;
+}
+
+body.dark .submit-btn {
+  color: #f6f8ff;
+  background-color: black;
+}
+#emailInput,
+#passwordInput {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+body.dark #emailInput,
+#passwordInput {
+  border: 1px solid black;
+  color: black;
+}
+
+/* Content Finish */
+
+.content-finish {
+  display: none;
+}
+
+.content-finish.active {
+  display: block;
+  margin: 50px 0;
+  text-align: center;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: green;
+}

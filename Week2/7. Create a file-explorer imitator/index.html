@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File explorer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style/main.css" />
+  </head>
+  <body>
+    <div class="create-window">
+      <div class="create-tab">
+        <div class="create-tab__top-bar">
+          <p class="create-tab__title">Create Folder</p>
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="create-tab__content">
+          <form class="create-tab__form" action="">
+            <input id="create-tab__input" type="text" />
+            <span class="create-tab__same-name">
+              There is a folder with this name
+            </span>
+            <span class="create-tab__empty-input">
+              It is not possible to leave the folder name blank
+            </span>
+          </form>
+        </div>
+        <div class="create-tab__footer">
+          <button class="btn save-btn">Save</button>
+        </div>
+      </div>
+    </div>
+    <header class="container">
+      <div class="header__left-side">
+        <p class="header__folder-name target"></p>
+      </div>
+
+      <div class="header__right-side">
+        <button class="header__create-btn btn header-btn active">
+          <span>Create Folder</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="header__other-btns">
+          <button class="header__rename-btn header-btn btn target">
+            <span class="target">Rename Folder</span>
+            <i class="fa-solid fa-file-signature target"></i>
+          </button>
+          <button class="header__delete-btn btn header-btn target">
+            <span class="target">Delete Folder </span>
+            <i class="fa-solid fa-trash target"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <aside>
+        <div class="aside__folders">
+          <div class="aside__parent-block">
+            <div class="aside__caret-btn">
+              <i class="fa-solid fa-caret-right"></i>
+            </div>
+            <div class="aside__folder-btn">
+              <i class="fa-solid fa-folder"></i>
+              <span class="aside__folder-name">Windows</span>
+            </div>
+          </div>
+          <div class="aside__child-block">
+            <div class="aside__child-folder">
+              <div class="aside__caret-btn">
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+              <div class="aside__folder-btn">
+                <i class="fa-solid fa-folder"></i>
+                <span class="aside__folder-name">Windows</span>
+              </div>
+            </div>
+            <div class="aside__child-folder">
+              <div class="aside__caret-btn">
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+              <div class="aside__folder-btn">
+                <i class="fa-solid fa-folder"></i>
+                <span class="aside__folder-name">Windows</span>
+              </div>
+            </div>
+            <div class="aside__child-folder">
+              <div class="aside__caret-btn">
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+              <div class="aside__folder-btn">
+                <i class="fa-solid fa-folder"></i>
+                <span class="aside__folder-name">Windows</span>
+              </div>
+            </div>
+            <div class="aside__child-folder">
+              <div class="aside__caret-btn">
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+              <div class="aside__folder-btn">
+                <i class="fa-solid fa-folder"></i>
+                <span class="aside__folder-name">Windows</span>
+              </div>
+            </div>
+            <div class="aside__child-folder">
+              <div class="aside__caret-btn">
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+              <div class="aside__folder-btn">
+                <i class="fa-solid fa-folder"></i>
+                <span class="aside__folder-name">Windows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <section>
+        <div class="main__top-bar">
+          <p class="main__top-title">Folders</p>
+          <div class="main__top-right">
+            <div class="main__top-filter">
+              <div class="main__filter-btn btn">
+                <div class="main__filter-name">
+                  <i class="fa-solid fa-list"></i>
+                  <span>For Name</span>
+                </div>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="main__filter-list">
+                <div class="main-filter__top-list">
+                  <p>Name</p>
+                  <p>Date</p>
+                  <p>Type</p>
+                  <p>Size</p>
+                </div>
+                <div class="main-filter__bottom-list">
+                  <p>Decreasing</p>
+                  <p>İncreasing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="folder-container"></div>
+      </section>
+    </main>
+    <script src="./assets/script/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="content__top-bar">
+          <div class="theme">
+            <label for="1" class="theme-light">
+              <i class="fa-solid fa-sun"></i>
+            </label>
+            <div class="theme-switch">
+              <!-- Rounded switch -->
+              <label class="switch">
+                <input id="1" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <label for="1" class="theme-dark">
+              <i class="fa-solid fa-moon"></i>
+            </label>
+          </div>
+        </div>
+        <div class="content-main active">
+          <form action="">
+            <label for="emailInput">
+              <span class="name-input">Email:</span>
+              <input type="email" name="" id="emailInput" required />
+              <span class="error-msg__email"
+                >Please enter your email address correctly</span
+              >
+            </label>
+            <label for="passwordInput">
+              <span class="name-input">Password:</span>
+              <input type="password" id="passwordInput" required />
+              <span class="error-msg__password"
+                >Please do not leave your password less than 8 digits</span
+              >
+            </label>
+            <button type="submit" class="btn submit-btn">Log In</button>
+          </form>
+        </div>
+        <div class="content-finish">
+          Your login process has been completed successfully
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/script/app.js"></script>
+  </body>
+</html>
