@@ -1,0 +1,87 @@
+.video-playback__container {
+  height: 600px;
+  position: relative;
+}
+
+.video-playback__cover {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.video-playback__content {
+  @include flexDirection(column, null, flex-end, null, null);
+  height: 100%;
+  padding: 40px 40px 0 40px;
+  background-image: map-get($pageColors, "--video-playback-linear");
+  color: white;
+}
+
+.video-playback__name {
+  @include fontProperty(
+    35px,
+    map-get($fontWeight, "--bold-700"),
+    map-get($pageColors, "--page-primary-text")
+  );
+  text-align: center;
+}
+
+.video-playback__description {
+  width: 85%;
+  margin: 20px auto;
+  @include fontProperty(
+    map-get($btnFontSize, "--normal"),
+    map-get($fontWeight, "--medium-500"),
+    map-get($pageColors, "--page-secondary-text")
+  );
+  text-align: center;
+}
+
+.video-playback__btns {
+  @include flexDirection(null, null, center, center, 10px);
+  margin-bottom: 50px;
+}
+
+.video-playback__play-btn {
+  @include flexDirection(null, null, null, center, 5px);
+  @include fontProperty(
+    map-get($btnFontSize, "--normal"),
+    map-get($fontWeight, "--semi-bold-600"),
+    map-get($pageColors, "--page-primary-text")
+  );
+}
+
+.video-playback__play-img {
+  @include flexDirection(null, null, null, center, null);
+}
+
+.video-playback__silder-btns {
+  @include flexDirection(null, null, space-between, center, null);
+}
+
+.video-playback__slider-nav {
+  @include flexDirection(null, null, null, center, 5px);
+}
+
+.video-playback__slider-nav-item {
+  width: 18px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: map-get($pageColors, "--video-playback-nav-item");
+}
+
+.video-playback__slider-nav-item.active {
+  width: 25px;
+  background-color: map-get($pageColors, "--video-playback-nav-item-active");
+}
+
+.video-playback__silder-btn > img {
+  width: 45px;
+}

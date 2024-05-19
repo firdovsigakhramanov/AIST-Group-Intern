@@ -1,0 +1,34 @@
+.card-one {
+  background-color: map-get($pageColors, "--navbar-border");
+  border: 1px solid map-get($pageColors, "--bottom-bar-border");
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.card-one__images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card-one__img > img {
+  width: 90px;
+}
+
+.card-one__footer {
+  @include flexDirection(null, null, space-between, center, null);
+  padding: 5px;
+}
+
+.card-one__movie-type {
+  @include fontProperty(
+    map-get($btnFontSize, "--normal"),
+    map-get($fontWeight, "--semi-bold-600"),
+    map-get($btnColor, "--btn-primary-text")
+  );
+}
+
+.card-one__footer-right > img {
+  width: 27px;
+  cursor: pointer;
+}

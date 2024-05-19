@@ -1,0 +1,33 @@
+$btnColor: (
+  "--btn-primary": rgba(229, 0, 0, 1),
+  "--btn-primary-text": rgba(255, 255, 255, 1),
+  "--btn-seondary": rgba(15, 15, 15, 1),
+);
+
+$btnFontSize: (
+  "--small": 14px,
+  "--normal": 16px,
+  "--big": 18px,
+);
+
+$fontWeight: (
+  "--regular-400": 400,
+  "--medium-500": 500,
+  "--semi-bold-600": 600,
+  "--bold-700": 700,
+);
+
+$pageColors: (
+  "--body-background": rgba(20, 20, 20, 1),
+  "--navbar-border": rgba(26, 26, 26, 1),
+  "--navbar-text": rgba(191, 191, 191, 1),
+  "--footer-background": rgba(15, 15, 15, 1),
+  "--page-primary-text": rgba(255, 255, 255, 1),
+  "--page-secondary-text": rgba(153, 153, 153, 1),
+  "--bottom-bar-border": rgba(38, 38, 38, 1),
+  "--video-playback-linear":
+    linear-gradient(to top, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0)),
+  "--video-playback-nav-item": rgba(51, 51, 51, 1),
+  "--video-playback-nav-item-active": rgba(229, 0, 0, 1),
+  "--card-control-border": rgba(31, 31, 31, 1),
+);

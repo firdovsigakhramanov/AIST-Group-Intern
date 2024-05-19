@@ -1,0 +1,64 @@
+footer {
+  background-color: map-get($pageColors, "--footer-background");
+  margin-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.footer__navigation-container {
+  @include flexDirection(null, null, space-between, null, null);
+  margin-bottom: 40px;
+}
+
+.footer__navigation-title {
+  @include fontProperty(
+    map-get($btnFontSize, "--big"),
+    map-get($fontWeight, "--semi-bold-600"),
+    map-get($pageColors, "--page-primary-text")
+  );
+  margin-bottom: 15px;
+}
+
+.footer__navigation-item > li {
+  margin-bottom: 15px;
+}
+
+.footer__navigation-link {
+  @include fontProperty(
+    map-get($btnFontSize, "--normal"),
+    map-get($fontWeight, "--medium-500"),
+    map-get($pageColors, "--page-secondary-text")
+  );
+}
+
+.footer__navigation-block:last-child > .footer__navigation-item {
+  @include flexDirection(null, null, null, center, 20px);
+}
+
+.footer__navigation-block:last-child > .footer__navigation-item img{
+  width: 45px;
+}
+
+.footer__bottom-bar {
+  @include flexDirection(null, null, space-between, center, null);
+  padding-top: 20px;
+  border-top: 1px solid map-get($pageColors, "--bottom-bar-border");
+  @include fontProperty(
+    map-get($btnFontSize, "--normal"),
+    map-get($fontWeight, "--regular-400"),
+    map-get($pageColors, "--page-secondary-text")
+  );
+}
+
+.footer__bottom-right > a {
+  padding-left: 10px;
+  @include fontProperty(
+    map-get($btnFontSize, "--normal"),
+    map-get($fontWeight, "--regular-400"),
+    map-get($pageColors, "--page-secondary-text")
+  );
+}
+
+.footer__bottom-right > a:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid map-get($pageColors, "--bottom-bar-border");
+}

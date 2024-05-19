@@ -1,0 +1,20 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "./mixin";
+@import "./map";
+@import "./header";
+@import "./footer";
+@import "./movies";
+@import "./cardblock";
+@import "./topbar";
+@import "./cardOne";
+@import "./btns";
+
+body {
+  background-color: map-get($pageColors, "--body-background");
+}
+
+.other-pages__text {
+  @include fontProperty(50px, 700, map-get($pageColors, "--page-primary-text"));
+  text-align: center;
+}
