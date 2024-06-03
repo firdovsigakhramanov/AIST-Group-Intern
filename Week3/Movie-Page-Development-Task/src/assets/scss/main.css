@@ -271,16 +271,18 @@ footer {
   border: 1px solid rgb(38, 38, 38);
   padding: 10px;
   flex-grow: 1;
+  border-radius: 12px;
 }
 
 .card-one__images-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
 }
 
 .card-one__img > img {
-  width: 90px;
+  width: 100%;
 }
 
 .card-one__footer {
@@ -288,6 +290,14 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+}
+
+.card-one__footer-img {
+  margin-bottom: 5px;
+}
+
+.card-one__footer-img > img {
+  width: 70px;
 }
 
 .card-one__movie-type {

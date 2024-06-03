@@ -1,9 +1,9 @@
 import React from 'react'
-import image1 from '../../../assets/images/cardone1.svg'
-import image2 from '../../../assets/images/CardOne2.svg'
-import image3 from '../../../assets/images/CardOne3.svg'
-import image4 from '../../../assets/images/CardOne4.svg'
-import arrow from '../../../assets/icons/rightArr.svg'
+import image1 from '../../../../assets/images/cardone1.svg'
+import image2 from '../../../../assets/images/CardOne2.svg'
+import image3 from '../../../../assets/images/CardOne3.svg'
+import image4 from '../../../../assets/images/CardOne4.svg'
+import arrow from '../../../../assets/icons/rightArr.svg'
 const CardOne = () => {
     return (
         <div className='card-one'>

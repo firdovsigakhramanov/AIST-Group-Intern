@@ -1,6 +1,8 @@
 import React from 'react'
 import TopBar from './TopBar/TopBar'
-import CardOne from './CardOne/CardOne'
+import CardOne from './Genres/CardOne/CardOne'
+import CardPopular from './Popular/CardPopular/CardPopular'
+
 
 const CardBlock = () => {
   return (
@@ -14,7 +16,6 @@ const CardBlock = () => {
         <CardOne />
         <CardOne />
       </div>
-
     </div>
   )
 }
